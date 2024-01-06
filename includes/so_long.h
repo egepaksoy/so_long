@@ -6,7 +6,7 @@
 /*   By: epaksoy <epaksoy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 11:29:35 by epaksoy           #+#    #+#             */
-/*   Updated: 2023/12/12 13:37:10 by epaksoy          ###   ########.fr       */
+/*   Updated: 2024/01/06 15:27:17 by epaksoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ typedef struct s_mlx
 	int		exit_x;
 	int		exit_y;
 	int		exit_opened;
+	int		read_count;
 	t_xpm	*xpm;
 }	t_mlx;
 
@@ -89,5 +90,7 @@ int		render(t_mlx **mlx);
 int		render_map(t_mlx *mlx);
 
 int		ft_print_error(char *str);
+
+int		virtual_map(t_mlx **mlx, int y, int x);
 
 #endif

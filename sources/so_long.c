@@ -6,7 +6,7 @@
 /*   By: epaksoy <epaksoy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 11:29:20 by epaksoy           #+#    #+#             */
-/*   Updated: 2023/12/12 13:28:32 by epaksoy          ###   ########.fr       */
+/*   Updated: 2024/01/06 15:33:30 by epaksoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	checker(t_mlx **mlx, char *map_path, int argc)
 	}
 	if (!map_draw(mlx))
 	{
-		ft_print_error("map drawing failed");
+		ft_print_error("Map isn't playable");
 		return (0);
 	}
 	return (1);

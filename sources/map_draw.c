@@ -6,7 +6,7 @@
 /*   By: epaksoy <epaksoy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 11:37:35 by epaksoy           #+#    #+#             */
-/*   Updated: 2023/12/12 12:31:05 by epaksoy          ###   ########.fr       */
+/*   Updated: 2024/01/06 15:33:23 by epaksoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ int	map_draw(t_mlx **mlx)
 	int	x;
 	int	y;
 
-	if (!map_check(mlx))
-		return (0);
 	y = 0;
+	if (!virtual_map(mlx, 0, 0))
+		return (0);
 	while (y < (*mlx)->map->y)
 	{
 		x = 0;

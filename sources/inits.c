@@ -6,7 +6,7 @@
 /*   By: epaksoy <epaksoy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 11:29:12 by epaksoy           #+#    #+#             */
-/*   Updated: 2023/12/12 12:31:50 by epaksoy          ###   ########.fr       */
+/*   Updated: 2024/01/06 15:28:19 by epaksoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int	init_main(t_mlx **mlx, char *map_path)
 	(*mlx)->count_c = 0;
 	(*mlx)->count_e = 0;
 	(*mlx)->move_count = 0;
+	(*mlx)->read_count = 0;
 	(*mlx)->player_y = 0;
 	(*mlx)->player_x = 0;
 	(*mlx)->win = mlx_new_window((*mlx)->mlx, ((*mlx)->map->x - 1) * PIXEL,
